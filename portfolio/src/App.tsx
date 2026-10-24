@@ -11,6 +11,7 @@ function App() {
 
           <div className="flex flex-row gap-x-5">
             <AboutMeCard/>
+            <h1>Testing Custom Domain Continuty!</h1>
             <div className="flex flex-col gap-y-5 h-full">
                 <BioDescCard/>
                 <SkillsCard/>

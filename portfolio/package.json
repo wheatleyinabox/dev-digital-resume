@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://wheatleyinabox.github.io/portfolio/",
+    "homepage": "https://wheatleyinabox.dev/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
