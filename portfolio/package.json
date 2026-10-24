@@ -1,13 +1,14 @@
 {
   "name": "portfolio",
-  "private": false,
+  "homepage": "https://wheatleyinabox.dev/",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://wheatleyinabox.dev/",
     "deploy": "npm run build && gh-pages -d dist --cname wheatleyinabox.dev",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "local": "npm run build && npm run dev",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -33,5 +34,12 @@
     "typescript-eslint": "^8.15.0",
     "vite": "^6.0.1",
     "vite-plugin-svgr": "^4.5.0"
+  },
+  "overrides": {
+    "postcss-selector-parser": "^7.1.6"
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "fsevents": true
   }
 }
