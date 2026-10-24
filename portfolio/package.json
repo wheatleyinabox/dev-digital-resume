@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "homepage": "https://wheatleyinabox.dev/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist --cname wheatleyinabox.dev",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
